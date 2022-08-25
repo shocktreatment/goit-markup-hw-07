@@ -2,6 +2,16 @@
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
+
+    @include mobile {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: start;
+    }
+
+    @include tablet {
+        justify-content: center;
+    }
 }
 
 .filtr-item:not(:last-child) {
